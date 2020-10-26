@@ -41,7 +41,7 @@ module pad_functional_pd (
   bufif0 (PAD, I, OEN);
   buf    (O, PAD);
   bufif0 (PAD_wi, 1'b0, PEN);
-  rpmos  (PAD, PAD_wi, 1'b0);
+  //rpmos  (PAD, PAD_wi, 1'b0);
 
 endmodule
 
@@ -77,6 +77,6 @@ module pad_functional_pu (
   bufif0 (PAD, I, OEN);
   buf    (O, PAD);
   bufif0 (PAD_wi, 1'b1, PEN);
-  rpmos  (PAD, PAD_wi, 1'b0);
+  //rpmos  (PAD, PAD_wi, 1'b0);
 
 endmodule

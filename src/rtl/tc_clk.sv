@@ -77,7 +77,7 @@ endmodule
 
 `ifndef SYNTHESIS
 module tc_clk_delay #(
-  parameter int unsigned Delay = 300ps
+  parameter int unsigned Delay = 300//ps
 ) (
   input  logic in_i,
   output logic out_o
