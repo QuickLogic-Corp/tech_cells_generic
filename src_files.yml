@@ -13,6 +13,8 @@ tech_cells_rtl:
     src/deprecated/pulp_pwr_cells.sv,
     src/rtl/tc_clk.sv,
     src/tc_pwr.sv,
+    # copied this here to be easy
+    src/deprecated/pulp_clock_gating_async.sv,
   ]
 
 tech_cells_rtl_synth:
