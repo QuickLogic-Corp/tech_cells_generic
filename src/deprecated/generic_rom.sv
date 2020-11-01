@@ -26,10 +26,12 @@ module generic_rom
    logic [DATA_WIDTH-1:0] MEM [NUM_WORDS-1:0];
    logic [ADDR_WIDTH-1:0] A_Q;
 
+`ifndef SYNTHESIS
    initial
    begin
      $readmemb(FILE_NAME, MEM);
    end
+`endif
 
    always_ff @(posedge CLK)
    begin
